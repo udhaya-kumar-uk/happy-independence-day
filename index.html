@@ -1,0 +1,196 @@
+
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- IMAGES
+       CSS FILE
+       JAVASCRIPT FILE -->
+    <title>Happy Independence day</title>
+    <link rel="icon" href="http://127.0.0.1:5500/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./index_files/css2" rel="stylesheet">
+    <script src="./index_files/script.js.download"></script>
+    <style>
+     
+      
+    </style>
+  </head>
+  <body>
+   
+    <div class="message">  <h1 class="day" id="count">Happy Independence day</h1>
+    </div>
+ 
+
+<style>
+  head,body{
+    margin: 0px;
+    padding: 0px;
+  }
+  .day{
+    color: ivory;
+
+  }
+  .message {
+     background-color: purple;
+     width: 100%;
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+
+  }
+</style>
+
+<script>function one (cb=()=>{}){
+  console.log('10')
+  update('10')
+  cb()
+  }
+  function two (cb=()=>{}){
+  console.log('9')
+  update('9')
+  cb()
+  }
+  function three ( cb=()=>{}){
+  console.log('8')
+  update('8')
+  cb();
+  }
+  function four ( cb=()=>{}){
+  console.log('7')
+  update('7')
+  cb();
+  }
+  function five (cb=()=>{}){
+  console.log('6')
+  update(6)
+  cb();
+  }
+  function six( cb=()=>{}){
+  console.log('5')
+  update('5')
+  cb();
+  }
+  function seven( cb=()=>{}){
+  console.log('4')
+  update('4')
+  cb();
+  }
+  function eight( cb=()=>{}){
+  console.log('3')
+  update('3')
+  cb();
+  }
+  function nine( cb=()=>{}){
+  console.log('2')
+  update('2')
+  cb();
+  }
+  function ten( cb=()=>{}){
+  console.log('1')
+  update('1')
+  cb();
+  }
+  function zero ( cb=()=> {}) {
+  console.log("happy new year")
+  update("Happy Independence day")
+  cb();
+  }
+     
+   function update(message){
+    let p=document.getElementById("count")
+    p.innerText=message
+   }
+
+
+
+   function timer(){
+   one(  ()=>setTimeout(()=>{
+    two(()=>setTimeout(()=>{
+    three
+    (()=>setTimeout(()=>{
+    four
+    (()=>setTimeout(()=>{
+    five
+    (()=>setTimeout(()=>{
+    six
+    (()=>setTimeout(()=>{
+    seven
+    (()=>setTimeout(()=>{
+    eight
+    (()=>setTimeout(()=>{
+    nine
+    (()=>setTimeout(()=>{ ten ( ()=>setTimeout( ()=>{ zero ( ()=>setTimeout( ()=>{
+    
+    },1000
+    )
+    )
+    
+    },1000
+    )
+    )
+    },1000
+    ));
+    },1000
+    ));
+    },1000
+    ));
+    },1000
+    ));
+    },1000
+    ));
+    },1000
+    ));
+    },1000
+    ));
+    },1000
+   ));
+    },1000
+    ));
+   }
+   
+   timer()
+   </script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
